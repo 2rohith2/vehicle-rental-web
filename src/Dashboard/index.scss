@@ -1,0 +1,150 @@
+@import '../assets/global.scss';
+
+.dashboard {
+  .spin {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+
+    .ant-spin {
+      color: $primary-bg-color;
+
+      .anticon-spin {
+        font-size: 100px;
+      }
+    }
+  }
+
+  &--container {
+    .header {
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.07);
+      padding: 24px;
+      display: flex;
+      align-items: center;
+
+      .label {
+        color: #201D22;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        background: var(--background-primary, #FFF);
+      }
+
+      .action {
+        width: 400px;
+        display: flex;
+        align-items: baseline;
+      }
+    }
+  }
+
+  .content {
+    padding: 24px;
+
+    &--header {
+      display: flex;
+    }
+
+    .action {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      .dropdown {
+        width: 230px;
+      }
+
+      .button {
+        background-color: #F1ECFD;
+        color: #6F35F2;
+      }
+    }
+
+    .vehicles {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-top: 35px;
+
+      &--container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 256px;
+        border-radius: 8px;
+        gap: 0px;
+        border: 1px solid var(--stroke-primary, #DCD9DD);
+        background: var(--background-primary, #FFF);
+
+        .label-container {
+          width: 100%;
+
+          .mt-12 {
+            margin-top: 12px;
+          }
+
+          .p-14 {
+            padding: 14px;
+          }
+
+          img {
+            width: inherit;
+          }
+
+          .status {
+            float: right;
+            @extend .p-14;
+          }
+
+          .label {
+            font-size: 18px;
+            font-weight: 500;
+          }
+        }
+
+        .sub-label {
+          font-weight: 400;
+        }
+
+        .details {
+          border-radius: 0px 0px 7px 7px;
+          background: var(--tag-grey-bg, #F1F1F1);
+          text-align: end;
+          width: 92%;
+          padding: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.modal {
+  &--header {
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .footer {
+    margin-top: 52px;
+    display: flex;
+    gap: 30px;
+    flex-direction: row-reverse;
+  }
+
+  .content {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    
+    .contact {
+      display: flex;
+      gap: 16px;
+
+      .details {
+        width: 100%;
+      }
+    }
+  }
+
+}

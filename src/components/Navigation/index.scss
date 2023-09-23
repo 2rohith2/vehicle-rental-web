@@ -1,0 +1,61 @@
+@import '../../assets/global.scss';
+
+.navigation {
+  .topbar {
+    height: 48px;
+    background-color: #201D22;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+
+    .container {
+      display: flex;
+
+      .icon {
+        cursor: pointer;
+        width: 20px;
+      }
+
+      .logo {
+        color: #FFFFFF;
+      }
+
+    }
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+
+    .container {
+      width: 196px;
+      background: #FAF9FC;
+      height: calc(100vh - 80px);
+      border-right: solid 1px gray;
+
+      .active {
+        border-left-color: $primary-bg-color !important;
+        color: $primary-bg-color !important;
+      }
+
+      .link {
+        padding-left: 24px;
+        display: flex;
+        align-items: center;
+        height: 32px;
+        color: #545658;
+        align-items: center;
+        border-left: solid 5px white;
+
+        img {
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .children {
+      width: 100%;
+    }
+  }
+}

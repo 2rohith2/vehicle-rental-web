@@ -1,0 +1,37 @@
+@import '../assets/global.scss';
+
+.login {
+  display: flex;
+  justify-content: center;
+
+  &--container {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 600px;
+  }
+
+  &--group {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .header {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: $primary-bg-color;
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+  }
+
+  .submit {
+    margin-top: 20px;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+  }
+}
